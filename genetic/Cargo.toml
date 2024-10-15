@@ -1,0 +1,14 @@
+[package]
+name = "encoded_genetic"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "encoded_genetic"
+
+[dependencies]
+derive_more = { version = "1.0.0", features = ["full"] }
+enum-map = "2.7.3"
+genetic_algorithm = "0.17.0"
+itertools = "0.13.0"
+strum = { version = "0.26.3", features = ["derive"] }

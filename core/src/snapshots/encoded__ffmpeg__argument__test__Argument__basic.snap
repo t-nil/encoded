@@ -1,0 +1,28 @@
+---
+source: src/ffmpeg.rs
+expression: "[Argument::Flag(\"-hide_banner\".into()), Argument::InputFile(input_file),\nArgument::Parameter { key: \"-codec\".into(), val: \"copy\".into(), },\nArgument::OutputFile(OutputFile::Closed(tempdir.path().join(\"foo.mkv\"))),].into_iter().map(|arg|\narg.try_into_string()).collect_vec()"
+---
+[
+    Ok(
+        [
+            "-hide_banner",
+        ],
+    ),
+    Ok(
+        [
+            "-i",
+            "/tmp/.tmplIpGho/input.flv",
+        ],
+    ),
+    Ok(
+        [
+            "-codec",
+            "copy",
+        ],
+    ),
+    Ok(
+        [
+            "/tmp/.tmplIpGho/foo.mkv",
+        ],
+    ),
+]

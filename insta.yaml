@@ -1,0 +1,9 @@
+# these are used by cargo insta test
+test:
+  # also set by INSTA_TEST_RUNNER
+  runner: "auto"
+  test_runner_fallback: true
+  # automatically assume --review was passed to cargo insta test
+  auto_review: true
+  # automatically assume --accept-unseen was passed to cargo insta test
+  auto_accept_unseen: false
